@@ -1,38 +1,95 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<com.first.akashshrivastava.randomactofkindness.RevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/primary_layout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffe74c3c"
+    android:clickable="true"
     android:gravity="start"
 
-    android:clickable="true"
-    tools:context=".RandomActMainActivity"
-    android:background="#ffe74c3c">
+    android:measureWithLargestChild="false"
+    android:orientation="vertical"
+    android:paddingLeft="-5dp"
+    android:paddingRight="-5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context=".RandomActMainActivity">
 
-    <TextView
-        android:textSize="24sp"
-        android:id="@+id/first_label"
-        android:text="@string/your_act"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#c6ffffff" />
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/sub_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/first_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_act"
+                android:textColor="#c6ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Act_string"
+
+                android:layout_width="340dp"
+                android:layout_height="460dp"
+                android:layout_marginLeft="-5dp"
+                android:gravity="center|start"
+                android:text="@string/the_random_act"
+                android:textColor="#ffffffff"
+                android:textSize="42sp"
+                />
+        </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/Act_string"
+        <LinearLayout
+            android:id="@+id/shareLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="270dp"
+            android:clickable="false"
+            android:orientation="vertical">
 
-        android:textSize="45sp"
-        android:text="@string/the_random_act"
-        android:layout_width="match_parent"
-        android:layout_weight="80.02"
-        android:layout_height="0dp"
-        android:textColor="#ffffffff"
-        android:gravity="center|start" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/shareButton"
+                android:src="@drawable/abc_ic_menu_share_mtrl_alpha"
+                app:fab_showShadow="true"
+                app:fab_size="normal"
+                app:fab_showAnimation="@anim/fab_scale_up"
+                app:fab_hideAnimation="@anim/fab_scale_down"
+
+                app:fab_progress_color="#FF009688"
+                app:fab_progress_backgroundColor="#FFF"
+                app:fab_progress_indeterminate="false"
+                app:fab_progress_max="100"
+                app:fab_progress="0"
 
 
+                app:fab_colorNormal="#2196F3"
+                app:fab_colorPressed="#7C4DFF"
+                app:fab_colorRipple="#99FFFFFF"
+                app:menu_shadowColor="#66000000"
 
-</LinearLayout>
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:scaleType="centerInside">
+                </com.github.clans.fab.FloatingActionButton>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</com.first.akashshrivastava.randomactofkindness.RevealLayout>

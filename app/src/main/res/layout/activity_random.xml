@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.first.akashshrivastava.randomactofkindness.RevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/primary_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:clickable="true"
+    tools:context=".RandomActMainActivity"
+    android:measureWithLargestChild="false">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="#669900"
+        >
+
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/first_label2"
+            android:text="@string/your_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c6ffffff" />
+
+        <TextView
+            android:id="@+id/Act_string2"
+            android:textSize="42sp"
+            android:text="@string/the_random_act"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:textColor="#ffffffff"
+            android:gravity="center|start"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="-5dp"
+            />
+
+        <!--<ImageButton-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+
+            <!--android:id="@+id/shareButton"-->
+            <!--android:background="@drawable/oval"-->
+            <!--android:elevation="5dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/ic_share_white_32p"-->
+            <!--android:clickable="true"-->
+            <!--android:scaleType="centerInside"/>-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/shareButton"
+            android:src="@drawable/abc_ic_menu_share_mtrl_alpha"
+            fab:fab_showShadow="true"
+            fab:fab_size="normal"
+            fab:fab_showAnimation="@anim/fab_scale_up"
+            fab:fab_hideAnimation="@anim/fab_scale_down"
+            fab:fab_progress_color="#FF009688"
+            fab:fab_progress_backgroundColor="#FFF"
+            fab:fab_progress_indeterminate="false"
+            fab:fab_progress_max="100"
+            fab:fab_progress="0"
+            fab:fab_colorNormal="#2196F3"
+            fab:fab_colorPressed="#7C4DFF"
+            fab:fab_colorRipple="#99FFFFFF"
+            fab:menu_shadowColor="#66000000"
+
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:scaleType="centerInside">
+
+        </com.github.clans.fab.FloatingActionButton>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="#ffe74c3c"
+        >
+
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/first_label"
+            android:text="@string/your_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c6ffffff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Act_string"
+            android:textSize="42sp"
+            android:text="@string/the_random_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:gravity="center|start"
+            android:layout_centerInParent="true"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/shareButtonLast"
+            fab:fab_showShadow="true"
+            fab:fab_size="normal"
+            fab:fab_showAnimation="@anim/fab_scale_up"
+            fab:fab_hideAnimation="@anim/fab_scale_down"
+            fab:fab_progress_color="#FF009688"
+            fab:fab_progress_backgroundColor="#FFF"
+            fab:fab_progress_indeterminate="false"
+            fab:fab_progress_max="100"
+            fab:fab_progress="0"
+            fab:fab_colorNormal="#2196F3"
+            fab:fab_colorPressed="#7C4DFF"
+            fab:fab_colorRipple="#99FFFFFF"
+            fab:menu_shadowColor="#66000000"
+
+
+            android:elevation="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/abc_ic_menu_share_mtrl_alpha"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:visibility="gone">
+    </com.github.clans.fab.FloatingActionButton>
+
+
+</RelativeLayout>
+
+
+
+</com.first.akashshrivastava.randomactofkindness.RevealLayout>

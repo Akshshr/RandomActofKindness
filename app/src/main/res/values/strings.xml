@@ -4,10 +4,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="the_random_act">Ready for your first act of great kindness? Go ahead and tap! </string>
+    <string name="the_random_act">Ready for your first act of great kindness?
+        Go ahead and tap! </string>
 
 
     <string name="something">Something goes here!</string>
+    <string name="facebook_app_id">226662277732953</string>
 
 
     <string name="your_act">Your act for today : </string>

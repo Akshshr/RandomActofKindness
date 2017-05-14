@@ -7,18 +7,20 @@ import java.util.Random;
 /**
  * Created by akashshrivastava on 15-03-18.
  */
-public class ColorWheel {
+public final class ColorWheel {
     String[] allTheColor =
             {"#F44336",
             "#E91E63",
+            "#093145",
             "#9C27B0",
             "#673AB7",
-            "#2196F3",
             "#0277BD",
             "#0097A7",
             "#B2EBF2",
             "#26A69A",
             "#4CAF50",
+            "#B6B6B6",
+           "#FFCDD2",
             "#9CCC65",
             "#CDDC39",
             "#FFC107",
